@@ -1,8 +1,30 @@
 aid: leucine
 name: Leucine
-description: Leucine is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Leucine is an AI-powered software platform for pharmaceutical manufacturing,
+  quality, and laboratory operations, helping drug manufacturers plan, execute, and
+  optimize every batch. The platform spans a Manufacturing Execution System (batch
+  execution, batch intelligence, production logbooks, batch release, shop floor monitor,
+  material management), a Quality Management System (AI Investigator, FDA Tracker,
+  cleaning validation, market complaints, change control, CAPA, supplier quality, audit
+  and deviation management), and a Laboratory Execution System (environmental monitoring,
+  instrument logbooks, QC planning). Leucine also publishes FDA compliance research
+  including 483 analysis and investigator profiles. As of 2026 the company is migrating
+  its web presence from leucinetech.com and leucine.io to leucine.ai. Leucine is an
+  enterprise SaaS vendor and does not publish a public developer API program, OpenAPI
+  definition, SDKs, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/leucine/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/67ac6107a20267663269af6d/67d7c1c98e3ee005ed0372ac_OG%20_%20Home%20Page.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Pharmaceutical
+- Manufacturing
+- Quality Management
+- Life Sciences
+- Regulatory Compliance
+- Artificial Intelligence
+- Manufacturing Execution System
+- Laboratory
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +52,23 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://leucinetech.com/
+  url: https://www.leucine.io/
+- type: Blog
+  url: https://www.leucine.io/mes-blogs
+- type: Support
+  url: https://support.leucine.io/knowledge-base
+- type: PrivacyPolicy
+  url: https://leucine.ai/privacy/
+- type: GitHubOrganization
+  url: https://github.com/LeucineTech
+- type: LLMsTxt
+  url: llms/leucine-llms.txt
+- type: ContentSignal
+  url: well-known/leucine-well-known.yml
+- type: DomainSecurity
+  url: security/leucine-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
