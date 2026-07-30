@@ -1,0 +1,69 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of the Leucine web hosts
+notes: No /.well-known/ discovery documents are published on any Leucine host. Leucine
+  publishes no public API, so there is no OIDC/OAuth discovery surface. What Leucine
+  does publish for machine consumers is an llms.txt directory (captured verbatim at
+  llms/leucine-llms.txt) and Cloudflare-managed Content-Signal directives in the
+  leucine.ai robots.txt.
+hosts:
+- host: https://www.leucine.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 200
+    file: ../llms/leucine-llms.txt
+  - path: /robots.txt
+    status: 200
+  - path: /sitemap.xml
+    status: 200
+    entries: 1849
+- host: https://leucine.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 200
+    note: 301 to https://www.leucine.io/llms.txt
+- host: https://leucine.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    note: Cloudflare bot protection returns 403 to non-browser clients; presence could
+      not be verified
+  - path: /robots.txt
+    status: 200
+content_signals:
+- host: https://leucine.ai
+  source: https://leucine.ai/robots.txt
+  managed_by: Cloudflare Managed Content
+  signals:
+    search: yes
+    ai-train: no
+    use: reference
+  rights_reservation: Article 4, EU Directive 2019/790 (Copyright in the Digital Single
+    Market)
+  disallowed_agents:
+  - Amazonbot
+  - Applebot-Extended
+  - Bytespider
+  - CCBot
+  - ClaudeBot
+  - CloudflareBrowserRenderingCrawler
+  - Google-Extended
+  - GPTBot
+  - meta-externalagent
+- host: https://www.leucine.io
+  source: https://www.leucine.io/robots.txt
+  signals: null
+  note: No Content-Signal directives; robots.txt disallows a set of thin/internal
+    pages and the knowledge base for all agents.

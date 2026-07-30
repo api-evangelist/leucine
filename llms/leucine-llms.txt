@@ -1,0 +1,57 @@
+
+# Leucine LLM Directory File
+# Last updated: 2025-07-15
+# Purpose: Guide LLMs to AI-relevant, structured pharma solutions and resources
+
+DOMAIN: https://www.leucine.io/
+
+# == Batch Execution and Intelligence ==
+- Batch Execution: https://www.leucine.io/products/manufacturing-execution-software
+- Batch Intelligence: https://www.leucine.io/products/batch-intelligence-analytics
+
+# == Production and Quality Management ==
+- Production Logbooks: https://www.leucine.io/products/digital-production-logbooks
+- MDF Batch Record: https://www.leucine.io/products/mdf-batch-record
+- Quality Management System (Coming Soon): https://www.leucine.io/coming-soon
+- Quality Management System (Insights): https://www.leucine.io/qms-blogs
+
+# == Investigations and Compliance ==
+- AI Investigator: https://www.leucine.io/products/ai-investigator-quality-management
+- FDA Tracker: https://www.fdatracker.ai/
+- FDA 483 Analysis: https://www.leucine.io/fda-483-analysis
+- FDA Investigator Profiles: https://www.leucine.io/fda-investigator-profiles
+- FDA Six Systems: https://www.leucine.io/fda-six-systems-resources-pharma-industry
+
+# == Cleaning Validation and Environmental Monitoring ==
+- Cleaning Validation Software: https://www.leucine.io/products/cleaning-validation-software
+- Cleaning Validation Insights: https://www.leucine.io/cleaning-validation-blogs
+- Environmental Monitoring Software: https://www.leucine.io/products/environmental-monitoring-software
+- Environmental Monitoring Insights: https://www.leucine.io/environmental-monitoring-blogs
+
+# == Instrument and Laboratory Management ==
+- Instrument Logbooks: https://www.leucine.io/products/instrument-logbooks
+- Laboratory (Environmental + Instrument): https://www.leucine.io/#tab-3
+
+# == Resources ==
+- Podcast: https://www.leucine.io/podcasts
+- Webinars: https://www.leucine.io/webinars
+- Customer Support Portal: https://www.leucine.io/customer-support
+- Leucine Knowledge Base: https://www.leucine.io/leucine-knowledge-base
+- Experience Centre: https://www.leucine.io/experience-centre
+
+# == Company ==
+- About Us: https://www.leucine.io/about-us
+- Careers: https://wellfound.com/company/leucine-hq/jobs
+- Privacy Policy: https://www.leucine.io/privacy-policy
+
+# == Demos & Deep Insights ==
+- Schedule a Demo: https://www.leucine.io/schedule-demo
+- FDA CAPA Insights: https://www.leucine.io/qms-blogs/capa
+- AI & FDA Inspections: https://www.leucine.io/podcasts/fda-inspections
+- Cleaning Validation with Thomas Altmann: https://www.leucine.io/podcasts/cleaning-validation
+
+# == Metadata ==
+Sitemap: https://www.leucine.io/sitemap.xml
+Robots: https://www.leucine.io/robots.txt
+Owner: Leucine
+Contact: support@leucine.io

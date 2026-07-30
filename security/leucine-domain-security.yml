@@ -1,0 +1,64 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts (no OpenAPI hosts — Leucine publishes
+  no public API)
+notes: Leucine operates three domains mid-migration — leucinetech.com (legacy, 301s
+  to www.leucine.io), leucine.io (primary content host), and leucine.ai (migration
+  target, Cloudflare-fronted and 403 to non-browser clients).
+hosts:
+- host: www.leucine.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 29 00:02:42 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: support.leucine.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 20 20:58:44 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: leucine.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 25 10:45:52 2026 GMT
+  hsts: false
+  note: Cloudflare returns 403 to non-browser user agents; HSTS header not observed
+- host: leucinetech.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 25 12:12:35 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: leucine.io
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 iodef "mailto:junaid.baig@leucinetech.com"
+  spf: true
+  spf_record: include:3978454.spf05.hubspotemail.net
+  dmarc: true
+  dmarc_policy: none
+- domain: leucine.ai
+  dnssec: false
+  caa:
+  - 0 issue "pki.goog; cansignhttpexchanges=yes"
+  - 0 issue "ssl.com"
+  - 0 issuewild "comodoca.com"
+  spf: true
+  spf_record: v=spf1 include:_spf.google.com include:3978454.spf05.hubspotemail.net
+    include:amazonses.com include:servers.mcsv.net ~all
+  dmarc: true
+  dmarc_policy: none
+- domain: leucinetech.com
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issuewild "letsencrypt.org"
+  - 0 iodef "mailto:junaid.baig@leucinetech.com"
+  spf: true
+  spf_record: v=spf1 include:_spf.google.com include:3978454.spf05.hubspotemail.net
+    -all
+  dmarc: true
+  dmarc_policy: quarantine
