@@ -13,6 +13,17 @@ description: Leucine is an AI-powered software platform for pharmaceutical manuf
   enterprise SaaS vendor and does not publish a public developer API program, OpenAPI
   definition, SDKs, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/leucine/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
