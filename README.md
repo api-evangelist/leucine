@@ -64,24 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Leucine is an AI-powered software platform for pharmaceutical manufacturing, quality, and laboratory operations, helping drug manufacturers plan, execute, and optimize every batch. The platform spans a Manufacturing Execution System (batch execution, batch intelligence, production logbooks, batch release, shop floor monitor, material management), a Quality Management System (AI Investigator, FDA Tracker, cleaning validation, market complaints, change control, CAPA, supplier quality, audit and deviation management), and a Laboratory Execution System (environmental monitoring, instrument logbooks, QC planning).
+Leucine is an AI-powered software platform for pharmaceutical manufacturing, quality, and laboratory operations, helping drug manufacturers plan, execute, and optimize every batch. The platform spans a Manufacturing Execution System (batch execution, batch intelligence, production logbooks, batch release, shop floor monitor, material management), a Quality Management System (AI Investigator, FDA Tracker, cleaning validation, market complaints, change control, CAPA, supplier quality, audit and deviation management), and a Laboratory Execution System (environmental monitoring, instrument logbooks, QC planning). Leucine also publishes FDA compliance research including 483 analysis and investigator profiles. As of 2026 the company is migrating its web presence from leucinetech.com and leucine.io to leucine.ai. Leucine is an enterprise SaaS vendor and does not publish a public developer API program, OpenAPI definition, SDKs, or developer portal.
 
-Backed by: techstars — https://www.leucine.io/
+**Areas:** Company · Pharmaceuticals · Manufacturing · Quality Management · Life Sciences · Regulatory Compliance · Artificial Intelligence · Manufacturing Execution System · Laboratory
 
-## API surface
+## Leucine on APIs.io
 
-Leucine is an enterprise SaaS vendor with **no public developer API program** — no developer portal, OpenAPI definition, API reference, SDKs, CLI, webhooks, or public package-registry libraries were found during enrichment. The GitHub organization [LeucineTech](https://github.com/LeucineTech) exists but publishes no public repositories. Spec-dependent artifacts (openapi, overlays, errors, data-model, mcp, skills, scopes, authentication, agentic-access) are therefore not applicable.
+Everything profiled for Leucine is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/leucine/](https://apis.io/providers/leucine/)** — or go straight to one of the APIs or properties below.
 
-Note: "API" throughout Leucine's own content refers to *Active Pharmaceutical Ingredient*, not a web API.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | Method | Notes |
-|---|---|---|
-| `llms/leucine-llms.txt` | searched | Published verbatim at https://www.leucine.io/llms.txt |
-| `well-known/leucine-well-known.yml` | searched | No `/.well-known/` documents; records Cloudflare Content-Signal directives on leucine.ai |
-| `security/leucine-domain-security.yml` | probed | TLS/HSTS/DNSSEC/CAA/SPF/DMARC across leucine.io, leucine.ai, leucinetech.com |
+#### Security (1)
 
-## Domains
+Authentication, trust centre, and vulnerability disclosure.
 
-Leucine is mid-migration across three domains: `leucinetech.com` (legacy, 301s to `www.leucine.io`), `leucine.io` (primary content host), and `leucine.ai` (migration target). `leucine.ai` is Cloudflare-fronted and its robots.txt disallows `ClaudeBot` and other AI agents, so it was not crawled.
+- [Leucine Domain Security](https://apis.io/security/leucine/leucine-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.leucine.io/)
+- [Support](https://support.leucine.io/knowledge-base)
+- [Blog](https://www.leucine.io/mes-blogs)
+- [Privacy policy](https://leucine.ai/privacy/)
+- [GitHub](https://github.com/LeucineTech)
+
+## API Evangelist rating
+
+**Kin Score 8.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.2** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | yes |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/leucine/](https://apis.io/providers/leucine/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Leucine: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/leucine/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
